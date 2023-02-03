@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClear(view : View){
-        expression?.text = ""
+        expression?.text = expression?.text.toString().substring(0, expression?.text.toString().length - 1)
         lastSymbol= false
         lastDot = false
     }
